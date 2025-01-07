@@ -1,0 +1,110 @@
+Para trabajas especialmente grandes, pero sirve igual para pequeños, tiene ciertas caracteristicas: 
+
+    Lenguaje orientado a objetos
+    Es multiplataforma
+    Manejo automatico de memoria
+    Evolucion permanente 
+    Gran demanda del mercado
+
+
+sout + tab = System.out.println("Para imprimir");
+
+Tipos de datos: 
+
+entero = int
+decimales = double 
+booleanos = boolean 
+caracteres = char 
+cadenas de texto = string 
+entero largo = long //// numeros entre (-9.223.372.036.854.775.808 y -9.223.372.036.854.775.808)
+
+
+                tipo de dato
+
+declaracion:    int numero; 
+                    nombre de la variable   
+
+
+OPERADORES 
+
+aritmeticos, de operaciones matematicas: + , - , * , /
+Relacionales: == , > , < . <= , => , != 
+Condicionales: && (AND o y) , || (OR u o ) , ! (negacion)
+
+/////////////////////////////
+
+condicional if:
+
+sintaxis basica
+
+        int num1 = 35;
+        int num2 = 20;
+        
+        if (num1 < num2) {
+            System.out.println("num2 es mayor");
+        }
+
+/////////////////////////////
+
+condicional if/else: 
+
+sintaxis basica
+
+        int num1 = 35;
+        int num2 = 20;
+        
+        if (num1 < num2) {
+            System.out.println("num2 es mayor");
+        }
+        else {
+            System.out.println("num1 es mayor");
+        }
+
+///////////////////////////
+
+condicional if/else anidado
+
+        int num1 = 35;
+        int num2 = 20;
+        
+        if (num1 > num2) {
+            System.out.println("num2 es mayor");
+        }
+        else {
+
+            if (num1 == num2){
+                System.out.println("son iguales");
+            }
+            else{
+                System.out.println("num1 es mayor");
+            }
+            
+        }
+
+///////////////////////
+
+CONDICIONAL SWITCH
+
+        int dia = 0; 
+        String nombredia; 
+
+        switch (dia) {
+            case 1: nombredia="Lunes";
+            break;
+            case 2: nombredia="Martes";
+            break;
+            case 3: nombredia="Miercoles";
+            break;
+            case 4: nombredia="Jueves";
+            break;
+            case 5: nombredia="Viernes";
+            break;
+            case 6: nombredia="Sabado";
+            break;
+            case 7: nombredia="Domingo";
+            break;
+            default: nombredia="Dia invalido";
+            break;
+        }
+        
+        System.out.println("el dia es: " + nombredia);
