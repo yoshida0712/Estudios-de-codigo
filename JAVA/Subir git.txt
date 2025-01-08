@@ -1,0 +1,18 @@
+Abrir la carpeta en Visual Studio Code:
+
+Abre Visual Studio Code.
+Ve a File > Open Folder... y selecciona la carpeta que deseas subir.
+
+Inicializar un repositorio Git:
+Abre la terminal integrada en Visual Studio Code (Ctrl + ).
+
+Ejecuta el comando git init para inicializar un nuevo repositorio Git en la carpeta.
+
+Agregar archivos al repositorio:
+Ejecuta git add . en la terminal para agregar todos los archivos de la carpeta al staging area.
+
+Hacer un commit:
+Ejecuta git commit -m "Initial commit" para hacer un commit de los archivos agregados.
+
+Subir los cambios al repositorio remoto:
+Ejecuta git push -u origin master para subir los cambios al repositorio en GitHub.
