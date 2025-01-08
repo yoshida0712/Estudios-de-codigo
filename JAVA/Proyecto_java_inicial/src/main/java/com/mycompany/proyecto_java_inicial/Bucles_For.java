@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.proyecto_java_inicial;
 
-/**
- *
- * @author TIRESIA
- */
 public class Bucles_For {
-    
+    public static void main(String[] args) {
+        for (int cont =20; cont<=10; cont--){
+            System.out.println("La condicion final del alumno es: " + cont);
+        }
+    }
 }
