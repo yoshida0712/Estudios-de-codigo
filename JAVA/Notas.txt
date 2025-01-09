@@ -165,3 +165,27 @@ while (cont <=10){
     System.out.println("La condicion final del alumno es: " + cont);
     cont = cont + 1;
 }
+
+For: 
+
+for (inicializacion; condicion, modificacion)
+{
+    Sentencia;
+}
+
+inicializacion: variable que inicia el ciclo.
+condicion: es la que dicta cuando se termina.
+modificacion: la que aumenta o disminuye 
+
+////////////////////////////////////////////////////////////////////////
+
+ARREGLOS
+
+conjunto de pocisiones en memoria, que pueden guardar los mismo tipos de datos, 
+y cada uno esta representado por un indice, el cual arranca desde 0,
+
+si tengo un arreglo de 8 pocisiones, el indice arranca en 0 y termina en 7
+
+
+indice  0   1   2   3   4   5   6   7
+arreglo 1   2   3   4   5   6   7   8
