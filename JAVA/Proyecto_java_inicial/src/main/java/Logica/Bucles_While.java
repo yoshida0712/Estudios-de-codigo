@@ -1,4 +1,4 @@
-package com.mycompany.proyecto_java_inicial;
+package Logica;
 
 public class Bucles_While {
     public static void main(String[] args) {

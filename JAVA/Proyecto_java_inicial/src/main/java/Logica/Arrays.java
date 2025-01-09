@@ -1,5 +1,5 @@
 
-package com.mycompany.proyecto_java_inicial;
+package Logica;
 
 import java.util.Scanner;
 

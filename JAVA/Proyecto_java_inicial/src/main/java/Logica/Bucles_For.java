@@ -1,5 +1,5 @@
 
-package com.mycompany.proyecto_java_inicial;
+package Logica;
 
 public class Bucles_For {
     public static void main(String[] args) {
