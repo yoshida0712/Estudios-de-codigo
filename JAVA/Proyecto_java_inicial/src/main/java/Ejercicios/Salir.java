@@ -1,13 +1,10 @@
-
 package Ejercicios;
-
 import java.util.Scanner;
 
 public class Salir {
     public static void main(String[] args) {
         System.out.println("Por favor ingrese la palabra: ");
-        Scanner teclado = new Scanner (System.in);
-        
+        Scanner teclado = new Scanner (System.in);        
         String palabra = teclado.next();
                      /*equals se usa para comparar strings, tal cual se coloca la condicion, si se
                      coloca SALIR, solo cuando se escriba SALIR se codigo se detiene, pero si se
@@ -18,7 +15,6 @@ public class Salir {
             System.out.println("La palabra es: " + palabra);
             System.out.println("Por favor ingrese la palabra: ");
             palabra = teclado.next();
-        }
-        
+        }        
     }
 }
