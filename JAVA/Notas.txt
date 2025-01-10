@@ -189,3 +189,16 @@ si tengo un arreglo de 8 pocisiones, el indice arranca en 0 y termina en 7
 
 indice  0   1   2   3   4   5   6   7
 arreglo 1   2   3   4   5   6   7   8
+
+///////////////////////////////////////////////////////////////////////
+
+MODELO DE CAPAZ
+
+La arquitectura en capas es un modelo de diseño de software, cuya base es la separación de las diferentes funcionalidades del 
+sistema en capas o niveles, donde cada capa se encarga de un conjunto de tareas específicas y se comunica con los niveles 
+adyacentes mediante interfaces bien definidas.
+
+IGU, interfas graficas dele usuario.
+Logica
+Persistencia, la que ayuda con la comunicacion con la base de datos
+
