@@ -32,13 +32,25 @@ public class Vectores2 {
             );            
         }        
         
-        Double minima = 999999999.0;
-        int posMin;
-        for ( int i = 0; i < a; i++){
+        Double minima = tempM[0];
+        double maxima = tempMx[0];
+        int posMin = -1;
+        int posMax = -1;
+        for ( int i = 0; i < cuidad.length; i++){
             if (tempM[i] < minima){
                 minima = tempM[i];
-                posMin = i;
+                posMin = i; 
+            }
+            if (tempMx[i] > maxima){
+                maxima = tempMx[i];
+                posMax = i;
             }
         }
+        
+        System.out.println("La temperatura minima es de: " + minima);
+        System.out.println("Se registro en la cuidad :" + cuidad[posMin]);
+        System.out.println("La temperatura minima es de: " + maxima);
+        System.out.println("Se registro en la cuidad :" + cuidad[posMax]);
+        
     }
 }
