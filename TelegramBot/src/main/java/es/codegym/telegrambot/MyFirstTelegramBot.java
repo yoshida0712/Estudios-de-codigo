@@ -5,6 +5,10 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+import java.util.Map;
+
+import static es.codegym.telegrambot.TelegramBotContent.*;
+
 public class MyFirstTelegramBot extends MultiSessionTelegramBot {
 
     public static final String NAME = "PrimerBot0712_bot";
@@ -18,9 +22,63 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
     public void onUpdateEventReceived(Update update) {
         // TODO: escribiremos la funcionalidad principal del bot aquí
         if (getMessageText().equals("/start")) {
-            sendTextMessageAsync("Hola, como va todo?");
+            setUserGlory(0);
+            sendTextMessageAsync(STEP_1_TEXT,
+                    Map.of("Hackear la nevera", "step_1_btn"));
         }
 
+        if (getCallbackQueryButtonKey().equals("step_1_btn")){
+            setUserGlory(20);
+            sendTextMessageAsync(STEP_2_TEXT,
+                    Map.of( "Tomar una salchica +20 de fama", "step_2_btn",
+                            "Tomar una pescado +20 de fama", "step_2_btn",
+                            "Tirar una lata de pepinillos +20 de fama", "step_2_btn"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("step_2_btn")){
+            setUserGlory(20);
+            sendTextMessageAsync(STEP_3_TEXT,
+                    Map.of("Hackear al robot aspiradora", "step_3_btn"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("step_3_btn")){
+            setUserGlory(30);
+            sendTextMessageAsync(STEP_4_TEXT,
+                    Map.of("Enviar al robot aspiradora por comida +30 de fama", "step_4_btn",
+                            "Dar un paso en el robot aspirador +30 de fama", "step_4_btn",
+                            "Huir del robot aspiradora +30 de fama", "step_4_btn"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("step_4_btn")){
+            addUserGlory(40);
+            sendTextMessageAsync(STEP_5_TEXT,
+                    Map.of("Usar la GoPro +40 de fama", "step_5_btn"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("step_5_btn")){
+            addUserGlory(30);
+            sendTextMessageAsync(STEP_6_TEXT,
+                    Map.of("Grabar un paseo por el parque +40 de fama","step_6_btn",
+                            "Salir a saltar por los techos +40 de fama","step_6_btn"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("step_6_btn")){
+            //addUserGlory();
+            sendTextMessageAsync(STEP_7_TEXT,
+                    Map.of("Caminar sobre el teclado +50 de fama","step_7_btn"));
+        }
+
+        if(getCallbackQueryButtonKey().equals("step_7_btn")){
+            sendTextMessageAsync(STEP_8_TEXT,
+                    Map.of("Fama maxima alcanzada, GENIAL, teminos el dia de momento","final_text"));
+        }
+
+        if (getCallbackQueryButtonKey().equals("final_text")){
+            sendTextMessageAsync(FINAL_TEXT,
+                    Map.of("Vuelve a esciribr /start para empezar de nuevo, AQUI VAMOS",""));
+        }
+
+        /*
         if (getMessageText().equals("Bien")){
             sendTextMessageAsync("Que bien, cual es tu nombre ?");
         }
@@ -32,6 +90,8 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         if (getMessageText().contains("?")){
             sendTextMessageAsync("si, soy *Gato*, aunque no lo parezca");
         }
+
+         */
     }
 
     public static void main(String[] args) throws TelegramApiException {
