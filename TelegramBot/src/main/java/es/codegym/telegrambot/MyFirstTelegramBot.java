@@ -93,21 +93,6 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
             sendTextMessageAsync(FINAL_TEXT,
                     Map.of("Precio este boton para reiniciar el dia o escribe /start","/start"));
         }
-
-        /*
-        if (getMessageText().equals("Bien")){
-            sendTextMessageAsync("Que bien, cual es tu nombre ?");
-        }
-
-        if (getMessageText().contains("nombre")){
-            sendTextMessageAsync("Mucho gusto, yo soy *Gato*");
-        }
-
-        if (getMessageText().contains("?")){
-            sendTextMessageAsync("si, soy *Gato*, aunque no lo parezca");
-        }
-
-         */
     }
 
     public static void main(String[] args) throws TelegramApiException {
