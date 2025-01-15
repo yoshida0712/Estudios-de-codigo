@@ -48,7 +48,7 @@ public class Vectores4 {
         }                 
         for (int f1 = 0; f1 < f; f1++) {
             for (int c = 0; c < 3; c++) {
-                System.out.print(matriz[f1][c]);
+                System.out.print(matriz[f1][c] + " ");
             }
             System.out.println("\n");
         }
@@ -64,22 +64,40 @@ public class Vectores4 {
             int puestos = teclado.nextInt();
             matriz[ruta][horario]= matriz[ruta][horario] - puestos;
             
+            // Verificar si los valores ingresados están dentro de los límites permitidos
             if (ruta < 0 || ruta >= f || horario < 0 || horario >= 3) {
-                System.out.println("Error: Ruta o horario fuera de los límites permitidos.");
-                System.out.println("Por favor ingrese 1 para volver a ingrear los datos correctos o 2 para finalizar o .");
-                Scanner teclado2 = new Scanner(System.in);
-                int respuesta = teclado2.nextInt();
+                System.out.println("Error: La ruta o el horario seleccionados no están disponibles.");
+                System.out.println("Por favor ingrese 1 para volver a ingresar los datos correctos o 2 para finalizar.");
+                int respuesta = teclado.nextInt();
                 if (respuesta == 1) {
-                    continue;
+                    continue; // Reinicia el bucle `while` desde el principio de la siguiente iteración
                 } else {
-                    break;
+                    break; // Sale del bucle `while`
+                }
+            }
+
+            // Verificar si hay suficientes puestos disponibles
+            if (matriz[ruta][horario] < puestos) {
+                System.out.println("Lo siento, la cantidad de puestos seleccionados en la ruta excede la cantidad de puestos disponibles.");
+                System.out.println("Ingrese 1 para continuar con la selección de ruta y 2 para terminar:");
+                int respuesta2 = teclado.nextInt();
+                if (respuesta2 == 1) {
+                    continue; // Reinicia el bucle `while` desde el principio de la siguiente iteración
+                } else {
+                    break; // Sale del bucle `while`
                 }
             }
             
+                System.out.println("Su reserva fue realizada con exito");
+                System.out.println("En la ruta :" + ruta);
+                System.out.println("En el horario :" + horario);
+            
+            
+            /*
             System.out.println("Su reserva fue realizada con exito");
             System.out.println("En la ruta :" + ruta);
             System.out.println("En el horario :" + horario);
-            
+             */
             
         }
     }
