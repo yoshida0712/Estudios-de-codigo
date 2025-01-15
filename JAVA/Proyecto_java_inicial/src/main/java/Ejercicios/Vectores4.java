@@ -87,18 +87,10 @@ public class Vectores4 {
                     break; // Sale del bucle `while`
                 }
             }
-            
-                System.out.println("Su reserva fue realizada con exito");
-                System.out.println("En la ruta :" + ruta);
-                System.out.println("En el horario :" + horario);
-            
-            
-            /*
+
             System.out.println("Su reserva fue realizada con exito");
             System.out.println("En la ruta :" + ruta);
             System.out.println("En el horario :" + horario);
-             */
-            
         }
     }
 }
