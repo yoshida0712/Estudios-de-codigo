@@ -24,6 +24,13 @@ public class Vectores4 {
         
     */
         
+/*
+ * Nota:
+ * El ejercicio esta incompleto, cuando se ingresa una posición por fuera de la matriz, ocurre un error por desbordamiento, que un no logro solucionar.
+ */
+
+
+
         System.out.println("Ingrese el numero de rutas de vuelo disponibles: ");
         Scanner teclado =  new Scanner(System.in);
         int f = teclado.nextInt();
