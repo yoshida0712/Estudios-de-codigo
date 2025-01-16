@@ -10,6 +10,14 @@ package igu;
  */
 public class Principal extends javax.swing.JFrame {
 
+    String dnis [] = new String [10];
+    String nombres [] = new String [10];
+    String apellidos [] = new String [10];
+    String direcciones [] = new String [10];
+    String telefonos [] = new String [10];
+    String fechanac [] = new String [10];
+    
+    
     /**
      * Creates new form Principal
      */
@@ -83,15 +91,14 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(LabelApellido)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(TxtApellido, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(LabelNombre)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(TxtNombre))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                            .addComponent(LabelDNI)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                            .addComponent(TxtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(LabelNombre)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TxtNombre))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(LabelDNI)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addComponent(TxtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(77, 77, 77)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -148,8 +155,18 @@ public class Principal extends javax.swing.JFrame {
         });
 
         BtnRetroceder1.setText("<<");
+        BtnRetroceder1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRetroceder1ActionPerformed(evt);
+            }
+        });
 
         BtnGuardar.setText("Guardar");
+        BtnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGuardarActionPerformed(evt);
+            }
+        });
 
         LabelIndice.setText("Indece:");
 
@@ -231,16 +248,58 @@ public class Principal extends javax.swing.JFrame {
 
     private void BtnAvanzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAvanzarActionPerformed
         // TODO add your handling code here:
-        int indi = 0;
         String indice = TxtContador.getText();
-
+        int indi = Integer.parseInt(indice);
+        
         if (indi < 9) {
-            indi = Integer.parseInt(indice);
-            indi = indi++;
+            
+            indi = indi + 1;
             indice = String.valueOf(indi);
             TxtContador.setText(indice);
+            
+            TxtDNI.setText(dnis[indi]);
+            TxtNombre.setText(nombres[indi]);
+            TxtApellido.setText(apellidos[indi]);
+            TxtDireccion.setText(direcciones[indi]);
+            TxtTelefono.setText(telefonos[indi]);
+            TxtFechaNa.setText(fechanac[indi]);
         }
     }//GEN-LAST:event_BtnAvanzarActionPerformed
+
+    private void BtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarActionPerformed
+        // TODO add your handling code here:
+        String indice = TxtContador.getText();
+        int indi = Integer.parseInt(indice);     
+         
+        dnis[indi] = TxtDNI.getText();
+        nombres[indi] = TxtNombre.getText();
+        apellidos[indi] = TxtApellido.getText();
+        direcciones[indi] = TxtDireccion.getText();
+        telefonos[indi] = TxtTelefono.getText();
+        fechanac[indi] = TxtFechaNa.getText();
+        
+    }//GEN-LAST:event_BtnGuardarActionPerformed
+
+    private void BtnRetroceder1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRetroceder1ActionPerformed
+        // TODO add your handling code here:
+        String indice = TxtContador.getText();
+        int indi = Integer.parseInt(indice);
+        
+        if (indi > 0) {
+            
+            indi = indi - 1;
+            indice = String.valueOf(indi);
+            TxtContador.setText(indice);
+            
+            TxtDNI.setText(dnis[indi]);
+            TxtNombre.setText(nombres[indi]);
+            TxtApellido.setText(apellidos[indi]);
+            TxtDireccion.setText(direcciones[indi]);
+            TxtTelefono.setText(telefonos[indi]);
+            TxtFechaNa.setText(fechanac[indi]);
+            
+        }
+    }//GEN-LAST:event_BtnRetroceder1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
