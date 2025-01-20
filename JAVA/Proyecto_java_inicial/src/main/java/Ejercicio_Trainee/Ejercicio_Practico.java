@@ -45,19 +45,14 @@ public class Ejercicio_Practico {
                 System.out.println("Puesto (entre 1 a 10): ");
                 P = teclado.nextInt();
 
-                if (F <= 10 && F >= 1 && P <= 10 && P >= 1) {
-                    if (F <= 10 && F >= 1) {
-                        if (P <= 10 && P >= 1) {
-                            ingreso = true;
-                        } else {
-                            System.out.println("El puesto ingresado es incorrecto");
-                        }
+                if (F <= 10 && F >= 1) {
+                    if (P <= 10 && P >= 1) {
+                        ingreso = true;
                     } else {
-                        System.out.println("La fila ingresada es incorrecta");
+                        System.out.println("El puesto ingresado es incorrecto");
                     }
-                }
-                else{
-                    System.out.println("Los valores ingresados tanto para fila como para puesto son invalidos");
+                } else {
+                    System.out.println("La fila ingresada es incorrecta");
                 }
             }
             F = F - 1;
