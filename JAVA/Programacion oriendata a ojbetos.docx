@@ -1,0 +1,20 @@
+¿Que es un paradigma ?
+Es todo aquel modelo, patrón o ejemplo que debe seguirse en determinada situación.
+También hace referencia  a una teoría o conjunto de teorías que sirve de modelo a seguir para resolver problemas o situaciones determinadas que se planteen.
+
+Paradigma orientada a objetos: 
+Es la implementación de un paradigma de la programación, o sea, es la forma de implementar una serie de normas o estándares. 
+
+Es el traer objetos de la vida real, siendo convertidos en código para utilizarlo a la hora de programar.
+
+Se basa en un concepto, agrupar datos que estén relacionados de alguna manera, y se llaman clase. Tiene las siguientes características: 
+
+Abstracción
+Encapsulamiento
+Polimorfismo
+Herencia
+UML
+
+
+Clases:
+Son las encargadas de guardar la información traída de la Abstracción de un objeto de la vida real a un código, las clases también se llaman métodos. 
