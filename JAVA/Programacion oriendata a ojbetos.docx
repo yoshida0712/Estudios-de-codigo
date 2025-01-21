@@ -15,6 +15,13 @@ Polimorfismo
 Herencia
 UML
 
-
 Clases:
-Son las encargadas de guardar la información traída de la Abstracción de un objeto de la vida real a un código, las clases también se llaman métodos. 
+Son las encargadas de guardar la información traída de la Abstracción de un objeto de la vida real a un código, las clases también se llaman métodos.
+
+Métodos: 
+*Son acciones contenidas en una clase, y definen su comportamiento.
+*Suelen tener por nombres verbos en infinitivo.
+*Desde la perspectiva de Diseño y Programación, se denominan Métodos.
+*Desde la perspectiva de análisis, se denominan operaciones.
+*Pueden tener opcionalmente valores de entrar [Parametros] y valores de salida [Valores de retorno]
+*Pueden existir procedimientos [no retornar un valor] y funciones [retornar un valor]
