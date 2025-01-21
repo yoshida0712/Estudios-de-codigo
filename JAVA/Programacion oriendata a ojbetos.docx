@@ -35,3 +35,31 @@ Objetos:
 *Es la representación de un objetos que generalmente existe en la vida real
 *Posee un estado (de acuerdo a sus atributos)
 *Posee un compartimiento (realizan operaciones de acuerdo a sus métodos)
+
+Constructores:
+*Son funciones especiales que contienen las clases que permiten la creación de objetos
+*Pueden recibir datos/parámetros como no (constructor vacío)
+*Se llaman SIEMPRE igual que la clase
+*No retorna NINGUN VALOR (ni siquiera VOID)
+*Generalmente se utilizan dos tipos de constructores: Vacío y con parámetros
+
+Getters y setters:
+
+Son las propiedades de acceso o accessors. Son, en esencia, funciones que se ejecutan para obtener (“get”) y asignar (“set”) un valor, pero que para un código externo se ven como propiedades normales.
+
+Herencia:
+
+*Hay clases que comparten gran parte de sus características
+*Permite reutilizar clases, permitiendo crear una nueva clase y utilizar la funcionalidad de otra para no tener que reescribir el código.
+*Se llaman subclase, pueden tener atributos y métodos que en la original no.
+
+/*
+El archivo de ejemplo se encuentra en la carpeta Herencia
+*/
+
+Polimorfismo: poli-muchas//morfismo-formas
+
+		Vehiculo
+Coche -- moto -- bus
+
+Es el poder utilizar diferentes tipos de datos, como si fueran del mismo tipo, desde que sean hijos de una clase clase principal [referencia a herencia]
