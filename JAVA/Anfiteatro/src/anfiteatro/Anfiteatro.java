@@ -11,14 +11,17 @@ public class Anfiteatro {
 
     public static void main(String[] args) {
 
+        //imagen 2 del ejercicio, POO
+
         List<ticket> listaTicket = new ArrayList<ticket>();
         Scanner teclado = new Scanner(System.in);
         Scanner teclado2 = new Scanner(System.in);
         Scanner teclado3 = new Scanner(System.in);
         Scanner teclado4 = new Scanner(System.in);
 
-        boolean bandera2 = false;
-        
+        //parte personal, mi idea, no del ejercicio
+
+        boolean bandera2 = false;        
         
         while (!bandera2) {
             int cont = 4;
@@ -48,8 +51,13 @@ public class Anfiteatro {
             cont = cont ++;
         }
 
+        //parte del ejercicio, donde se demuestra como se puede ingresar, tanto por datos como por objeto
+        //insercion
+
         ticket ticket1 = new ticket(1, 1, 1, 1500, new Date(), new Date());
         ticket ticket2 = new ticket(2, 1, 2, 1500, new Date(), new Date());
+
+        //encaptulamiento
 
         ticket ticket3 = new ticket();
         ticket3.setNumero(3);

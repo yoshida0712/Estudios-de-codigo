@@ -25,3 +25,13 @@ Métodos:
 *Desde la perspectiva de análisis, se denominan operaciones.
 *Pueden tener opcionalmente valores de entrar [Parametros] y valores de salida [Valores de retorno]
 *Pueden existir procedimientos [no retornar un valor] y funciones [retornar un valor]
+
+/*
+El código de referencia esta en el archivo llamado NewClass, en la carpeta de POO 
+*/
+
+Objetos: 
+*Es una instancia de una clase
+*Es la representación de un objetos que generalmente existe en la vida real
+*Posee un estado (de acuerdo a sus atributos)
+*Posee un compartimiento (realizan operaciones de acuerdo a sus métodos)
