@@ -1,5 +1,5 @@
 
-package Ejercicios.POO;
+package POO;
 
 public class sobrescritura {
     private int id_animal;

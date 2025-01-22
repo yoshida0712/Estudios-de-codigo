@@ -63,3 +63,9 @@ Polimorfismo: poli-muchas//morfismo-formas
 Coche -- moto -- bus
 
 Es el poder utilizar diferentes tipos de datos, como si fueran del mismo tipo, desde que sean hijos de una clase clase principal [referencia a herencia]
+
+Sobrescritura y Sobrecarga:
+
+La sobrescritura hace referencia a cuando tenemos varias funciones con el mismo nombre pero con diferente cantidad de tipos de datos o parámetros.
+
+La sobrecarga hace referencia a cuando se toma una función y se reutilizandola de forma que se aplica de diferente forma a la original.
