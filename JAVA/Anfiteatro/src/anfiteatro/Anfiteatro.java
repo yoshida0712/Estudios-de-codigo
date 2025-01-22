@@ -71,6 +71,8 @@ public class Anfiteatro {
         listaTicket.add(ticket2);
         listaTicket.add(ticket3);
 
+        //
+
         double suma = 0;
 
         for (ticket ticket : listaTicket) {
