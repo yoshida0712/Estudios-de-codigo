@@ -87,4 +87,13 @@ Archivo, encapsulamiento.
 
 Clases abstractas:
 
-Las clases abstactas hacen referencia a como guarda las funciones para que las clases hijas las hereden, pero no les dice el como tienen que funcionar, teniendo el nivel de publico y protegido, pero nunca privado.
+Las clases abstractas hacen referencia a como guarda las funciones para que las clases hijas las hereden, pero no les dice el como tienen que funcionar, teniendo el nivel de publico y protegido, pero nunca privado.
+(una clase hija no puede heredar de mas de 1 clase abstracta)
+
+/*
+Carpeta de abstracta
+*/
+
+Interfaces:
+
+Hace referencia a colecciones de métodos abstractos donde se tienen atributos constantes. Todos los métodos que contiene son abstractos. 
