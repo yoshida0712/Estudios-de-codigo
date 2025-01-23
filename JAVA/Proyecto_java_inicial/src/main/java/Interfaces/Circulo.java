@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Interfaces;
 
-/**
- *
- * @author TIRESIA
- */
+//esta inplementando multiples 
 public class Circulo implements figura, Dibujable, Rotable {
 
     private double radio;
@@ -28,11 +22,11 @@ public class Circulo implements figura, Dibujable, Rotable {
 
     @Override
     public void dibujar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("dibujando un circulo");
     }
 
     @Override
     public void rotar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("rotando un circulo");
     }
 }

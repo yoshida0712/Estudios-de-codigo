@@ -96,4 +96,8 @@ Carpeta de abstracta
 
 Interfaces:
 
-Hace referencia a colecciones de métodos abstractos donde se tienen atributos constantes. Todos los métodos que contiene son abstractos. 
+Hace referencia a colecciones de métodos abstractos donde se tienen atributos constantes. Todos los métodos que contiene son abstractos.  
+
+/*
+Ejercicio del los siguentes temas: Interfaces, Clases abstractas. En la carpeta POO_Ejercicios.
+*/
