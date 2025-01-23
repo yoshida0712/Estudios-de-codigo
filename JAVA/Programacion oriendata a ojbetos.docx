@@ -66,6 +66,25 @@ Es el poder utilizar diferentes tipos de datos, como si fueran del mismo tipo, d
 
 Sobrescritura y Sobrecarga:
 
-La sobrescritura hace referencia a cuando tenemos varias funciones con el mismo nombre pero con diferente cantidad de tipos de datos o parámetros.
+La sobrecarga hace referencia a cuando tenemos varias funciones con el mismo nombre pero con diferente cantidad de tipos de datos o parámetros.
 
-La sobrecarga hace referencia a cuando se toma una función y se reutilizandola de forma que se aplica de diferente forma a la original.
+La sobrescritura hace referencia a cuando se toma una función y se reutilizándola de forma que se aplica de diferente forma a la original.
+
+/*
+El archivo se encuentra en POO
+*/
+
+Encapsulamiento: 
+
+Encapsular hace referencia a reunir todos los elementos que se pueden considerar
+--Niveles de accedo: 
+			Publico: Permite que desde cualquier clase se pueda acceder.
+			Privado: Solo se puede utilizar desde la clase donde se creo.
+			Protegido: Un punto intermedio de protección, donde solo las clases hijas pueden acceder a este encapsulado.
+/*
+Archivo, encapsulamiento.
+*/
+
+Clases abstractas:
+
+Las clases abstactas hacen referencia a como guarda las funciones para que las clases hijas las hereden, pero no les dice el como tienen que funcionar, teniendo el nivel de publico y protegido, pero nunca privado.
