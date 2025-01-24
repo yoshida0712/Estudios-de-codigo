@@ -102,6 +102,10 @@ Hace referencia a colecciones de métodos abstractos donde se tienen atributos c
 Ejercicio del los siguentes temas: Interfaces, Clases abstractas. En la carpeta POO_Ejercicios.
 */
 
+/*
+Los siguientes temas estan en la carpeta Collections
+*/
+
 Collections: 
 
 Estructuras parecidas a los arreglos, pero siendo dinámicos, o sea, que el tamaño y cantidad de elementos pueden variar con del tiempo.
@@ -110,4 +114,5 @@ Tipos de Collections (principales): LIST, SET; QUEUE y MAP
 
 Lists: Conjunto de elementos relacionados entre si que tienen un determinado orden, y tambien tienen un tamaño dinamico. Tienen 2 tipos de orden FIFO(first in first out/el primero en entrar es el primero en salir) y LIFO(last in first out/el ultimo que entra es el primero en salir).
 
-　　　*Arraylists: una clase representada como Matriz dinamica, la cual 					permite colecciones 
+　　　*Arraylists: una clase representada como Matriz dinamica, la cual 					permite colecciones colecciones o elementos duplicados, 				permite un acceso a travez de indices, y a la hora de 					realizar acciones de tipo crud o mover lugares es lenta.
+　　　*Linkedlist: una clase, se representa como una lista doblemene 					enlazada (ida y vuelta), permite duplicada, con orden 					de insersion, mas rapida de manipular, tambien funciona 				como pila o cola, y permite agregar o eliminar al 					principio y final. 
