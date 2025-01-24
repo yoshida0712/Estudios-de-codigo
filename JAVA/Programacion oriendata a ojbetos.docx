@@ -106,3 +106,8 @@ Collections:
 
 Estructuras parecidas a los arreglos, pero siendo dinámicos, o sea, que el tamaño y cantidad de elementos pueden variar con del tiempo.
 
+Tipos de Collections (principales): LIST, SET; QUEUE y MAP
+
+Lists: Conjunto de elementos relacionados entre si que tienen un determinado orden, y tambien tienen un tamaño dinamico. Tienen 2 tipos de orden FIFO(first in first out/el primero en entrar es el primero en salir) y LIFO(last in first out/el ultimo que entra es el primero en salir).
+
+　　　*Arraylists: una clase representada como Matriz dinamica, la cual 					permite colecciones 
