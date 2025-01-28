@@ -1,4 +1,3 @@
-
 package Collections;
 
 import java.util.LinkedList;
@@ -14,7 +13,7 @@ public class LINKEDLIST {
         lista.add(new Persona(4,"Andres",24));
         
         //agregar al inicio de la lista
-        //
+        //para poner un dato al inicio de la array, se debe colocar el 0 de esta forma
         lista.add(0, new Persona(6,"Manuel",30));
         
         //No tienen un indice bien definido, por eso se debe usar un for each para recorer cada dato
