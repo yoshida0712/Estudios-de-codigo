@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Array_y_Linked_list",
+            "request": "launch",
+            "mainClass": "Collections.Array_y_Linked_list",
+            "projectName": "Proyecto_java_inicial"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

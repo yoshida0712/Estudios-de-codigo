@@ -123,3 +123,11 @@ Lists: Conjunto de elementos relacionados entre si que tienen un determinado ord
 　　　de insersion, mas rapida de manipular, tambien funciona
 　　　como pila o cola, y permite agregar o eliminar al
 　　　principio y final.
+
+DIFERENCIA ENTRE ARRAYLIST Y LINKEDLIST: 
+
+*Las array tienen un indice para ser recorridas, las linkedlist no.
+
+*La forma de eliminacion de los datos dentros de estos es distinto, mientras que cuando se elimina en un array atravez del indice y la fila se ordena corriendo hacia atras para llenar el dato vacio, en la list cuando se elimina un dato, se re acomodan los punteros. 
+
+	*Stacks: Pilas de objetos, uno arriba del otro. Tipo LIFO.
