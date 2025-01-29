@@ -11,6 +11,14 @@ package com.mycompany.crearmaven;
 public class CrearMaven {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        //con cualquier tipo de codigo se puede hacer esto,solo es un ejemplo base
+        try {
+            int cer = 3/0;
+        }
+        catch (Exception e) {
+            System.out.println("error, no dividir por cero");
+        }
+        
+        
     }
 }
