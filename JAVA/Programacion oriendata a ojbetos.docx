@@ -165,8 +165,9 @@ Tipos: propias de java como lenguaje y personalizadas.
 
 Excepciones personalizadas: para crearlas, se necesita tener en cuenta las siguientes cosas....
 
-*try: bloque donde puede ocurrur la excepción.
-*carch: el else del try
+*try: bloque donde puede ocurrir la excepción.
+*carch: el else del try.
 *finally: bloque que se ejecuta si o si, sin falta.
-*throw: lanzar una excepcion cualquiera
-*throws: determinar que excepciones puede lanzar un metodo.
+*throw: provoca la excepción ya sea de java o personalizada a ocurrir.
+*throws: Redirige una excepción cuando ocurre, a otra.
+
