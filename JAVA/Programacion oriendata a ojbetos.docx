@@ -131,3 +131,42 @@ DIFERENCIA ENTRE ARRAYLIST Y LINKEDLIST:
 *La forma de eliminacion de los datos dentros de estos es distinto, mientras que cuando se elimina en un array atravez del indice y la fila se ordena corriendo hacia atras para llenar el dato vacio, en la list cuando se elimina un dato, se re acomodan los punteros. 
 
 	*Stacks: Pilas de objetos, uno arriba del otro. Tipo LIFO.
+	*MAP: Coleccion de pares clave-valor, donde cada clave esta 
+	Asociada a un unico valor, no puede tener claves duplicadas, y 
+　　　permite rapido acceso a travez de las clase.
+　　　
+　　　	METODOS DE MAP:	*put (C clave, V valor): agregar datos.
+　　　					*het (object clave): devuelva el dato de la 
+　　　					clave o null si no existe.
+　　　					*containsKey(Object clave): verifica
+　　　Existencia de la clave.
+　　　					*containsValue(Object valor): Comprueba
+　　　existencia del valor.
+　　　*remove(Object clave): Elimina el registro
+　　　de esa clave.
+　　　*keySet (): Muestra todas las claves del Map.
+　　　*values (): Muestra todos los valores del Map.
+　　　
+
+QUE ES MAVEN ?
+
+Herramienta de software para crear proyectos en java, permitiendo el uso de librerías de forma automáticas, haciendo mas fácil el buscar e implementar el uso de la librería.
+
+QUE SON LAS ESCEPCIONES ? 
+
+Es un evento que ocurre durante la ejecucion de un programa que rompe el flujo normal del programa.
+*errores de hardware
+*operaciones matematicas no posibles
+*errores de codigo
+*apertura archivos no existentes(nombre de archivos cambiados, archivo eliminado, ruta incorrecta)
+*etc
+
+Tipos: propias de java como lenguaje y personalizadas. 
+
+Excepciones personalizadas: para crearlas, se necesita tener en cuenta las siguientes cosas....
+
+*try: bloque donde puede ocurrur la excepción.
+*carch: el else del try
+*finally: bloque que se ejecuta si o si, sin falta.
+*throw: lanzar una excepcion cualquiera
+*throws: determinar que excepciones puede lanzar un metodo.
