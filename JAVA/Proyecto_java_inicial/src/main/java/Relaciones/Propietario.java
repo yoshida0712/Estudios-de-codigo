@@ -15,6 +15,11 @@ public class Propietario {
         this.apellido = apellido;
     }
 
+    @Override
+    public String toString() {
+        return "Propietario{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + '}';
+    }
+
     public Long getId() {
         return id;
     }

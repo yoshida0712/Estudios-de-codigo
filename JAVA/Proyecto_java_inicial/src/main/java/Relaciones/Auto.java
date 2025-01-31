@@ -13,16 +13,11 @@ public class Auto {
     //necesitamos saber quien es el dueño de cada auto, por que el que importa es el auto, por que es el "cliente"
     //private Propietario prop;
     
-    
 //relacion 1 a N,  desde el lado del 1 al lado de la N, se establece una collections, para permitir que el objeto el de 1, tengo una coleccion de objetos
 
     private List<Propietario> listaPropietario;
     
-    
     //se agregan los constructores
-    
-    
-    
     
     public Auto() {
     }
@@ -34,6 +29,11 @@ public class Auto {
         this.listaPropietario = listaPropietario;
     }
 
+    @Override
+    public String toString() {
+        return "Auto{" + "id=" + id + ", marca=" + marca + ", modelo=" + modelo + ", listaPropietario=" + listaPropietario + '}';
+    }    
+    
     public List<Propietario> getListaPropietario() {
         return listaPropietario;
     }
